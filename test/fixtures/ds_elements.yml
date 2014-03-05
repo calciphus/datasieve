@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fullpath: MyString
+  prop: MyString
+  datatype: MyString
+  description: MyText
+  lastseen: 2014-03-05 15:15:31
+
+two:
+  fullpath: MyString
+  prop: MyString
+  datatype: MyString
+  description: MyText
+  lastseen: 2014-03-05 15:15:31
