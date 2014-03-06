@@ -2821,3 +2821,40 @@ Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 12:46:43 -0800
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 12:46:43 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+Processing by MainController#index as HTML
+  [1m[36mDsElement Load (0.3ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+  Rendered main/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 12:50:29 -0800
