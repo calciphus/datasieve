@@ -8,7 +8,7 @@ class MainController < ApplicationController
 		#if params[:token] == ENV['SIMPLE_TOKEN']
 			if params[:interactions]
 				params[:interactions].each do |iac|
-					output = flatten_with_path(iac.to_json)
+					output = flatten_with_path(iac)
 					output.each do |i,k|
 						if !i.include?"http"
 							puts i.gsub(".0."," -> ").gsub(".0","").gsub("."," -> ")
