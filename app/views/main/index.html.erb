@@ -3,6 +3,7 @@
 	<thead>
 		<tr>
 			<th>Path</th>
+			<th>Reference</th>
 			<th>Data Type</th>
 			<th>Description</th>
 			<th>Last Seen</th>
@@ -12,6 +13,7 @@
 		<% @elements.each do |e| -%>
 		<tr>
 			<td><%= link_to e.fullpath.gsub("."," &rarr; ").html_safe, "http://dev.datasift.com/search/site/#{e.fullpath}", :target => "_blank" -%></td>
+			<td><%= e.fullpath -%></td>
 			<td><%= e.datatype -%></td>
 			<td><%= e.description -%></td>
 			<td><%= e.updated_at -%></td>
@@ -28,7 +30,14 @@ $(document).ready(function() {
         "bFilter": true,
         "bSort": true,
         "bInfo": false,
-        "bAutoWidth": true
+        "bAutoWidth": true,
+    	"aoColumns": [ 
+			/* Path */   null,
+			/* Reference */  { "bVisible":    false },
+			/* Data Type */  null,
+			/* Description */  null,
+			/* Last Seen */    null
+		]
     } );
 } );
 </script>
