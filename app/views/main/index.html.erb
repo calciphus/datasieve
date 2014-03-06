@@ -1,2 +1,17 @@
-<h1>Main#index</h1>
-<p>Find me in app/views/main/index.html.erb</p>
+<h1>DataSift Elements</h1>
+<table>
+	<tr>
+		<th>Path</th>
+		<th>Data Type</th>
+		<th>Description</th>
+		<th>Last Seen</th>
+	</tr>
+	<% @elements.each do |e| -%>
+	<tr>
+		<td><%= e.fullpath.gsub("."," &rarr; ").html_safe -%></td>
+		<td><%= e.datatype -%></td>
+		<td><%= e.description -%></td>
+		<td><%= e.updated_at -%></td>
+	</tr>
+	<% end %>
+</table>

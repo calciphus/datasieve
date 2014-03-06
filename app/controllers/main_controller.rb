@@ -2,6 +2,7 @@ class MainController < ApplicationController
 	skip_before_filter :verify_authenticity_token, :only => [:webhook]
 
 	def index
+		@elements = DsElement.all.order(:fullpath)
 	end
 
 	def webhook
@@ -11,7 +12,14 @@ class MainController < ApplicationController
 					output = flatten_with_path(iac)
 					output.each do |i,k|
 						if !i.include?"http"
-							puts i.gsub(".0."," -> ").gsub(".0","").gsub("."," -> ")
+							target = i.gsub(".0",".").gsub("..",".")
+							elem = DsElement.find_or_create_by(fullpath: target)
+							if elem.prop == nil
+								elem.prop = target.split(".")[-1]
+								elem.save
+							else
+								elem.touch
+							end
 						end
 					end
 				end
