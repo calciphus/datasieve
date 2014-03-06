@@ -2627,3 +2627,77 @@ ActionController::RoutingError (No route matches [GET] "/images/sort_desc.png"):
   Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
   Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
   Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+Processing by MainController#index as HTML
+  [1m[35mDsElement Load (0.4ms)[0m  SELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC
+  Rendered main/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:06:29 -0800
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:06:59 -0800
+Processing by MainController#index as HTML
+  [1m[36mDsElement Load (0.3ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+  Rendered main/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:07:00 -0800
