@@ -2044,3 +2044,586 @@ Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 10:54:10 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 10:54:10 -0800
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 10:58:59 -0800
+Processing by MainController#index as HTML
+  [1m[36mDsElement Load (1.0ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+  Rendered main/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 10:59:00 -0800
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:00:00 -0800
+Processing by MainController#index as HTML
+  [1m[35mDsElement Load (0.4ms)[0m  SELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC
+  Rendered main/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (couldn't find file 'jquery.dataTa'
+  (in /Users/bradhubbard/Development/sieve/app/assets/javascripts/application.js:16)):
+    3: <head>
+    4:   <title>Sieve</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___3132958245936145750_70269986625200'
+
+
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.5ms)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:00:06 -0800
+Processing by MainController#index as HTML
+  [1m[36mDsElement Load (0.4ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+  Rendered main/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (couldn't find file 'jquery.dataTables'
+  (in /Users/bradhubbard/Development/sieve/app/assets/javascripts/application.js:16)):
+    3: <head>
+    4:   <title>Sieve</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___3132958245936145750_70269986625200'
+
+
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+Processing by MainController#index as HTML
+  [1m[35mDsElement Load (0.4ms)[0m  SELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC
+  Rendered main/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:00:34 -0800
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+Processing by MainController#index as HTML
+  [1m[36mDsElement Load (0.4ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+  Rendered main/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:01:05 -0800
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+Processing by MainController#index as HTML
+  [1m[35mDsElement Load (0.6ms)[0m  SELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC
+  Rendered main/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:34 -0800
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:02:42 -0800
+Processing by MainController#index as HTML
+  [1m[36mDsElement Load (0.6ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+  Rendered main/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:02:42 -0800
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+
+Started GET "/images/sort_both.png" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/sort_both.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (42.3ms)
+
+
+Started GET "/images/sort_asc.png" for 127.0.0.1 at 2014-03-06 11:02:43 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/sort_asc.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.0ms)
+
+
+Started GET "/images/sort_desc.png" for 127.0.0.1 at 2014-03-06 11:02:44 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/sort_desc.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.3ms)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+Processing by MainController#index as HTML
+  [1m[35mDsElement Load (0.6ms)[0m  SELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC
+  Rendered main/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:05 -0800
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:03:15 -0800
+Processing by MainController#index as HTML
+  [1m[36mDsElement Load (0.4ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+  Rendered main/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:16 -0800
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+Processing by MainController#index as HTML
+  [1m[35mDsElement Load (0.4ms)[0m  SELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC
+  Rendered main/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:17 -0800
+
+
+Started GET "/main/index" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+Processing by MainController#index as HTML
+  [1m[36mDsElement Load (0.4ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+  Rendered main/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 11:03:59 -0800
+
+
+Started GET "/images/sort_asc.png" for 127.0.0.1 at 2014-03-06 11:04:00 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/sort_asc.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.8ms)
+
+
+Started GET "/images/sort_both.png" for 127.0.0.1 at 2014-03-06 11:04:00 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/sort_both.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.6ms)
+
+
+Started GET "/images/sort_desc.png" for 127.0.0.1 at 2014-03-06 11:04:01 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/sort_desc.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bradhubbard/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/bradhubbard/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.8ms)
