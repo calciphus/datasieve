@@ -5,7 +5,7 @@ class MainController < ApplicationController
 	end
 
 	def webhook
-		if params[:token] == ENV['SIMPLE_TOKEN']
+		#if params[:token] == ENV['SIMPLE_TOKEN']
 			if params[:interactions]
 				params[:interactions].each do |iac|
 					output = flatten_with_path(iac.to_json)
@@ -16,7 +16,7 @@ class MainController < ApplicationController
 					end
 				end
 			end
-		end
+		#end
 		respond_to do |format|
 			# Respond with success per Datasift documentation
 			format.json{
