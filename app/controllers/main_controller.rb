@@ -10,7 +10,7 @@ class MainController < ApplicationController
 			if params[:interactions]
 				params[:interactions].each do |iac|
 					output = flatten_with_path(iac)
-					output.each do |i,k|
+					output.each do |i,v|
 						if !i.include?"http"
 							target = i.gsub(".0",".").gsub("..",".")
 							elem = DsElement.find_or_create_by(fullpath: target)

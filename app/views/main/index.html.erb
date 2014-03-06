@@ -11,7 +11,7 @@
 	<tbody>
 		<% @elements.each do |e| -%>
 		<tr>
-			<td><%= e.fullpath.gsub("."," &rarr; ").html_safe -%></td>
+			<td><%= link_to e.fullpath.gsub("."," &rarr; ").html_safe, "http://dev.datasift.com/search/site/#{e.fullpath}", :target => "_blank" -%></td>
 			<td><%= e.datatype -%></td>
 			<td><%= e.description -%></td>
 			<td><%= e.updated_at -%></td>
