@@ -3,6 +3,18 @@ class MainController < ApplicationController
 
 	def index
 		@elements = DsElement.all.order(:fullpath)
+		respond_to do |format|
+			# Respond with success per Datasift documentation
+			format.html {}
+			format.json{
+				output = Hash["elements" => []]
+				@elements.each do |e|
+					thise = Hash["source" => e.fullpath.split(".")[0], "field" => e.prop,  "namespace" => e.fullpath, "first_appeared" => e.created_at, "last_seen" => e.updated_at]
+					output["elements"] << thise
+				end
+				render :json => output.to_json
+			}
+		end
 	end
 
 	def webhook

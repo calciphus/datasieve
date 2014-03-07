@@ -4971,3 +4971,55 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-06 13:46:14
 
 
 Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-06 13:46:14 -0800
+  [1m[36mDsElement Load (0.5ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."id" ASC LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (8.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ds_elements"
+  [1m[36mDsElement Load (0.3ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+  Rendered main/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 112ms (Views: 96.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/assets/demo_table.css?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/assets/jquery.dataTables.css?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/assets/jquery.dataTables.min.js?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-07 13:15:30 -0800
+
+
+Started GET "/main/index.json" for 127.0.0.1 at 2014-03-07 13:15:44 -0800
+Processing by MainController#index as JSON
+  [1m[35mDsElement Load (0.6ms)[0m  SELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/index.json" for 127.0.0.1 at 2014-03-07 13:17:53 -0800
+Processing by MainController#index as JSON
+  [1m[36mDsElement Load (1.0ms)[0m  [1mSELECT "ds_elements".* FROM "ds_elements" ORDER BY "ds_elements"."fullpath" ASC[0m
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 1.4ms)
