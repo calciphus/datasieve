@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
 
 		  key = parent_prefix ? "#{parent_prefix}.#{k}" : k # assign key name for result hash
 
-		  if !is_num?k and !killpoints.include?key
+		  if ( !is_num?k and !killpoints.include?key ) or k == "0"
 		  	  if v.is_a? Enumerable
 			    res.merge!(flatten_with_path(v, key)) # recursive call to flatten child elements
 			  else
