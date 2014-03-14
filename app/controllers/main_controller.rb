@@ -16,6 +16,19 @@ class MainController < ApplicationController
 			}
 		end
 	end
+	def plain
+		@elements = DsElement.all.order(:fullpath)
+		respond_to do |format|
+			# Respond with success per Datasift documentation
+			format.html {
+				output = []
+				@elements.each do |e|
+					output << e.fullpath.gsub(/\.$/,'')
+				end
+				render :text => output.join("<br>")
+			}
+		end
+	end
 
 	def webhook
 		#if params[:token] == ENV['SIMPLE_TOKEN']
@@ -24,8 +37,8 @@ class MainController < ApplicationController
 					output = flatten_with_path(iac)
 					output.each do |i,v|
 						if !i.include?"http"
-							#target = i
-							target = i.gsub(".0",".").gsub("..",".")
+							target = i
+							#target = i.gsub(".0",".").gsub("..",".")
 							elem = DsElement.find_or_create_by(fullpath: target)
 							if elem.prop == nil
 								elem.prop = target.split(".")[-1]
