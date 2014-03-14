@@ -24,8 +24,8 @@ class MainController < ApplicationController
 					output = flatten_with_path(iac)
 					output.each do |i,v|
 						if !i.include?"http"
-							target = i
-							#target = i.gsub(".0",".").gsub("..",".")
+							#target = i
+							target = i.gsub(".0",".").gsub("..",".")
 							elem = DsElement.find_or_create_by(fullpath: target)
 							if elem.prop == nil
 								elem.prop = target.split(".")[-1]
