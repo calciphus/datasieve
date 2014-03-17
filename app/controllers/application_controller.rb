@@ -33,9 +33,10 @@ class ApplicationController < ActionController::Base
 			    res[key] = v
 			  end
 		  else
+		  	res[parent_prefix] = v
 		  	# This is an iterated array, will be caught when only one result is returned
 			# Or this is one of our killpoints
-			errs <<  "#{k} :: #{v}"
+			# errs <<  "#{k} :: #{v}"
 		  end
 
 		end
@@ -43,5 +44,23 @@ class ApplicationController < ActionController::Base
 		puts errs
 
 		res
+	end
+
+	def get_datatype(obj)
+		if obj.is_a?String
+			return "string"
+		elsif obj.is_a?Fixnum or obj.is_a?Bignum
+			return "int"
+		elsif obj.is_a?Array
+			return "array(#{get_datatype(obj[0])})"
+		elsif obj.is_a?TrueClass or obj.is_a?FalseClass
+			return "bool"
+		elsif obj.is_a?Hash
+			return "hash"
+		elsif obj.is_a?NilClass
+			return nil
+		else
+			return "#{obj.class}".downcase.gsub("class","")
+		end
 	end
 end

@@ -7,7 +7,6 @@
 			<th>Path</th>
 			<th>Reference</th>
 			<th>Data Type</th>
-			<th>Description</th>
 			<th>First Seen</th>
 			<th>Last Seen</th>
 		</tr>
@@ -18,7 +17,6 @@
 			<td><%= link_to e.fullpath.gsub(/\.$/,'').gsub("."," &rarr; ").html_safe, "http://dev.datasift.com/search/site/#{e.fullpath.gsub('.0','')}", :target => "_blank" -%></td>
 			<td><%= e.fullpath  -%></td>
 			<td><%= e.datatype -%></td>
-			<td><%= e.description -%></td>
 			<td><%= e.created_at -%></td>
 			<td><%= e.updated_at -%></td>
 		</tr>
@@ -39,7 +37,6 @@ $(document).ready(function() {
 			/* Path */   null,
 			/* Reference */  { "bVisible":    false },
 			/* Data Type */  null,
-			/* Description */  null,
 			/* First Seen */    null,
 			/* Last Seen */    null
 		]
