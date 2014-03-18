@@ -2,6 +2,8 @@ Sieve::Application.routes.draw do
   get "main/index"
   post "main/webhook"
   get "plain" => 'main#plain'
+  get "csv" => 'main#csv'
+  get "json" => 'main#json'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

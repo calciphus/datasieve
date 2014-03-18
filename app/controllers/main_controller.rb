@@ -16,6 +16,8 @@ class MainController < ApplicationController
 			}
 		end
 	end
+
+	# Plain text output
 	def plain
 		@elements = DsElement.all.order(:fullpath)
 		respond_to do |format|
@@ -28,6 +30,35 @@ class MainController < ApplicationController
 				render :text => output.join("<br>")
 			}
 		end
+	end
+
+	# CSV output
+	def csv
+		@elements = DsElement.all.order(:fullpath)
+		respond_to do |format|
+			# Respond with success per Datasift documentation
+			format.csv {
+				output = ["fullpath,datatype,first_seen,last_seen"]
+				@elements.each do |e|
+					output << "#{e.fullpath.gsub(/\.$/,'')},#{e.datatype},#{e.created_at},#{e.updated_at}"
+				end
+				response.headers['Content-Type'] = 'text/csv'
+			    response.headers['Content-Disposition'] = 'attachment; filename=sieve_export.csv'    
+				render :text => output.join("\n")
+			}
+		end
+	end
+
+	# JSON output
+	def json
+		@elements = DsElement.all.order(:fullpath)
+		# Respond with success per Datasift documentation
+		output = Hash["elements" => []]
+		@elements.each do |e|
+			thise = Hash["source" => e.fullpath.split(".")[0], "field" => e.prop,  "namespace" => e.fullpath, "datatype" => e.datatype, "first_appeared" => e.created_at, "last_seen" => e.updated_at]
+			output["elements"] << thise
+		end
+		render :json => output.to_json
 	end
 
 	def webhook
