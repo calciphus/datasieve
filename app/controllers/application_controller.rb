@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
 	def flatten_with_path(obj, parent_prefix = nil)
 		errs = []
 		# If interaction contains this, stop the propogation so we don't get junk stuff (like arrays of keywords)
-		killpoints = ["interaction.hashtags", "interaction.mention_ids", "interaction.mentions", "links.meta.content_type", "links.meta.keywords", "links.meta.opengraph", "links.meta.twitter", "links.retweet_count", "links.url", "links.content.entities", "salience.content.topics", "twitter.hashtags", "twitter.display_urls", "twitter.links", "twitter.mentions","twitter.mention_ids", "twitter.retweet.hashtags", "twitter.retweet.mention_ids", "twitter.retweet.mentions","salience.content.entities.themes","facebook.story_tags"]
+		killpoints = ["interaction.hashtags", "interaction.mention_ids", "interaction.mentions", "links.meta.content_type", "links.meta.keywords", "links.meta.opengraph", "links.meta.twitter", "links.retweet_count", "links.url", "links.content.entities", "salience.content.topics", "twitter.hashtags", "twitter.display_urls", "twitter.links", "twitter.mentions","twitter.mention_ids", "twitter.retweet.hashtags", "twitter.retweet.mention_ids", "twitter.retweet.mentions","salience.content.entities.themes","facebook.story_tags","links.hops"]
 		res = {}
 
 		obj.each_with_index do |elem, i|
