@@ -9,6 +9,7 @@
 			<th>Data Type</th>
 			<th>First Seen</th>
 			<th>Last Seen</th>
+			<th>Last Value</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -19,6 +20,7 @@
 			<td><%= e.datatype -%></td>
 			<td><%= e.created_at -%></td>
 			<td><%= e.updated_at -%></td>
+			<td><%= e.last_value -%></td>
 		</tr>
 		<% end %>
 	</tbody>
@@ -34,11 +36,12 @@ $(document).ready(function() {
         "bInfo": true,
         "bAutoWidth": true,
     	"aoColumns": [ 
-			/* Path */   null,
-			/* Reference */  { "bVisible":    false },
-			/* Data Type */  null,
+			/* Path */   		null,
+			/* Reference */  	{ "bVisible":    false },
+			/* Data Type */  	null,
 			/* First Seen */    null,
-			/* Last Seen */    null
+			/* Last Seen */    	null,
+			/* Last Value */	null
 		]
     } );
 } );

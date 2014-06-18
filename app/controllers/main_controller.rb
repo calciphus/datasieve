@@ -80,7 +80,7 @@ class MainController < ApplicationController
 								elem.datatype = get_datatype(v) #rescue nil
 							end
 							if v != nil and v != ""
-								elem.last_value = v
+								elem.last_value = v.to_s rescue "[nested]"
 							end
 							if elem.changed?
 								elem.save
