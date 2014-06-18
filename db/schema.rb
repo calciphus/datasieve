@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140305231531) do
+ActiveRecord::Schema.define(version: 20140618171030) do
 
   create_table "ds_elements", force: true do |t|
     t.string   "fullpath"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140305231531) do
     t.datetime "lastseen"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "last_value"
   end
 
 end

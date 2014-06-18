@@ -68,7 +68,7 @@ class MainController < ApplicationController
 					output = flatten_with_path(iac)
 					#puts output.to_yaml
 					output.each do |i, v|
-						puts "#{i} : #{v} (#{get_datatype(v)})"
+						#puts "#{i} : #{v} (#{get_datatype(v)})"
 						if !i.include?"http"
 							target = i
 							#target = i.gsub(".0",".").gsub("..",".")
@@ -78,6 +78,9 @@ class MainController < ApplicationController
 							end
 							if elem.datatype == nil or elem.datatype == ""
 								elem.datatype = get_datatype(v) #rescue nil
+							end
+							if v != nil and v != ""
+								elem.last_value = v
 							end
 							if elem.changed?
 								elem.save
