@@ -1,7 +1,8 @@
 <h1>DataSift Elements</h1>
 <h3>Total Endpoints: <%= @elements.size -%></h3>
 [<a href="/plain">Plain Text</a> ][<a href="/json.json">JSON</a>][<a href="/csv.csv">CSV</a>]
-<table id="master_table">
+<a href="#" class="toggle-vis" data-column="5" style="margin-left: 30px">Sample Values</a>
+<table id="master_table" class="display">
 	<thead>
 		<tr>
 			<th>Path</th>
@@ -41,8 +42,21 @@ $(document).ready(function() {
 			/* Data Type */  	null,
 			/* First Seen */    null,
 			/* Last Seen */    	null,
-			/* Last Value */	null
+			/* Last Value */	{ "bVisible":    false }
 		]
     } );
+
+    $('a.toggle-vis').on( 'click', function (e) {
+    	var table = $('#master_table').DataTable();
+        e.preventDefault();
+ 
+        // Get the column API object
+        var column = table.column( $(this).attr('data-column') );
+ 
+        // Toggle the visibility
+        column.visible( ! column.visible() );
+    } );
 } );
+
+
 </script>
